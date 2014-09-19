@@ -1,0 +1,40 @@
+/* toolbar */
+.icon-48-questionnaire {  background-image: url("../images/48/questionnaires.png"); }
+.icon-48-questionnaires {  background-image: url("../images/48/questionnaires.png"); }
+.icon-48-question {  background-image: url("../images/48/questions.png"); }
+.icon-48-questions {  background-image: url("../images/48/questions.png"); }
+.icon-48-rules {  background-image: url("../images/48/rules.png"); }
+.icon-48-mailtemplate {  background-image: url("../images/48/mail.png"); }
+.icon-48-mailtemplates {  background-image: url("../images/48/mail.png"); }
+.icon-48-logs {  background-image: url("../images/48/logs.png"); }
+.icon-48-utilities {  background-image: url("../images/48/utilities.png"); }
+
+/* buttons */
+.icon-32-required{  background-image: url("../images/32/required.png");}
+.icon-32-disallowed{  background-image: url("../images/32/disallowed.png");}
+.icon-32-recommended {  background-image: url("../images/32/recommended.png");}
+.icon-32-toggle {  background-image: url("../images/32/toggle.png");}
+.icon-32-unset {  background-image: url("../images/32/unset.png");}
+.icon-32-unsetall {  background-image: url("../images/32/unsetall.png");}
+.icon-32-unsetthis {  background-image: url("../images/32/unsetthis.png");}
+
+/* buttons J30 */
+span.icon-unsetall {background: url("../images/14/unsetall.png") 0 0 no-repeat;}
+span.icon-unsetthis {background: url("../images/14/unsetthis.png") 0 0 no-repeat;}
+span.icon-disallowed {background: url("../images/14/disallowed.png") 0 0 no-repeat;}
+span.icon-recommended {background: url("../images/14/recommended.png") 0 0 no-repeat;}
+span.icon-toggle {background: url("../images/14/toggle.png") 0 0 no-repeat;}
+span.icon-unset {background: url("../images/14/unset.png") 0 0 no-repeat;}
+span.icon-required {background: url("../images/14/required.png") 0 0 no-repeat;}
+
+ul.adminformlist{
+	list-style: none;
+}
+
+/* fix for pagination in protostar */
+table.adminlist ul.pagination-list{
+	display: block;
+}
+fieldset#filter-bar { 
+	height: auto;
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	version="3.0"
+	type="module"
+	method="upgrade"
+	client="site">
+	<name>mod_portfolio_summary</name>
+	<author>johnny</author>
+	<creationDate>August 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>display equities</description>
+	<files>
+		<filename module="mod_portfolio_summary">mod_portfolio_summary.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<media destination="mod_portfolio_summary" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+	</media>
+</extension>

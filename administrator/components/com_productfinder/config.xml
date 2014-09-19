@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<fieldset name="General" label="COM_PRODUCTFINDER_LBL_GENERAL"
+		description="COM_PRODUCTFINDER_DESC_GENERAL">
+		<field 
+			name="num_results" 
+			type="text"
+			default="8" 
+			filter="integer" 
+			label="COM_PRODUCTFINDER_LBL_NUM_RESULTS" 
+			description="COM_PRODUCTFINDER_DESC_NUM_RESULTS"
+		/>
+		<field 
+			name="score_threshold" 
+			type="text"
+			default="1"
+			filter="integer" 
+			label="COM_PRODUCTFINDER_LBL_SCORE_THRESHOLD" 
+			description="COM_PRODUCTFINDER_DESC_SCORE_THRESHOLD"
+		/>
+		<field 
+			name="primary_order" 
+			type="list" 
+			default="score"
+			label="COM_PRODUCTFINDER_LBL_PRIMARY_ORDER" 
+			description="COM_PRODUCTFINDER_DESC_PRIMARY_ORDER">
+			<option value="score">COM_PRODUCTFINDER_LBL_SCORE</option>
+			<option value="score_cat">COM_PRODUCTFINDER_LBL_SCORE_AND_CATEGORY
+			</option>
+			<option value="cat_score">COM_PRODUCTFINDER_LBL_CATEGORY_AND_SCORE
+			</option>
+		</field>
+		<field 
+			name="primary_order_field" 
+			type="list" 
+			default="order"
+			label="COM_PRODUCTFINDER_LBL_PRIMARY_ORDER_FIELD" 
+			description="COM_PRODUCTFINDER_DESC_PRIMARY_ORDER_FIELD">
+			<option value="title">COM_PRODUCTFINDER_LBL_CATEGORY_TITLE</option>
+			<option value="order">COM_PRODUCTFINDER_LBL_CATEGORY_ORDERING</option>
+		</field>
+		<field 
+			name="secondary_order" 
+			type="list" 
+			default="newest"
+			label="COM_PRODUCTFINDER_LBL_SECONDARY_ORDER" 
+			description="COM_PRODUCTFINDER_DESC_SECONDARY_ORDER">
+			<option value="title">COM_PRODUCTFINDER_LBL_TITLE</option>
+			<option value="alias">COM_PRODUCTFINDER_LBL_ALIAS</option>
+			<option value="order">COM_PRODUCTFINDER_LBL_ORDERING</option>
+			<option value="newest">COM_PRODUCTFINDER_LBL_NEWEST_FIRST</option>
+			<option value="oldest">COM_PRODUCTFINDER_LBL_OLDEST_FIRST</option>
+			<option value="hits">COM_PRODUCTFINDER_LBL_HITS</option>
+		</field>
+		<field type="spacer" name="myspacer2_0" label="true" />
+		<field 
+			name="no_results_action" 
+			type="list" 
+			default="1"
+			label="COM_PRODUCTFINDER_LBL_NO_RESULTS_ACTION" 
+			description="COM_PRODUCTFINDER_DESC_NO_RESULTS_ACTION">
+			<option value="0">COM_PRODUCTFINDER_LBL_NOTHING</option>
+			<option value="1">COM_PRODUCTFINDER_LBL_SHOW_MESSAGE</option>
+			<option value="2">COM_PRODUCTFINDER_LBL_SHOW_ARTICLES</option>
+			<option value="3">COM_PRODUCTFINDER_LBL_SHOW_MESSAGE_AND_ARTICLES</option>
+		</field>
+		<field 
+			name="res_not_found_msg" 
+			type="textarea" 
+			rows="5" 
+			cols="40"
+			default="Sorry, there are no items to display." 
+			label="COM_PRODUCTFINDER_LBL_MESSAGE"
+			description="COM_PRODUCTFINDER_DESC_MESSAGE" 
+		/>
+		<field 
+			name="res_not_found_ids" 
+			type="text" 
+			default=""
+			label="COM_PRODUCTFINDER_LBL_ARTICLE_IDS"
+			description="COM_PRODUCTFINDER_DESC_ARTICLE_IDS" 
+		/>
+	</fieldset>
+	<fieldset name="layout" label="COM_PRODUCTFINDER_RESULTS_LAYOUT">
+		<field 
+			name="num_columns" 
+			type="list" 
+			default="1"
+			label="COM_PRODUCTFINDER_LBL_NUM_COLUMNS" 
+			description="COM_PRODUCTFINDER_DESC_NUM_COLUMNS">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</field>
+		<field 
+			name="show_titles" 
+			type="list" 
+			default="1"
+			label="COM_PRODUCTFINDER_LBL_SHOW_TITLES" 
+			description="COM_PRODUCTFINDER_DESC_SHOW_TITLES">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field 
+			name="show_category" 
+			type="list" 
+			default="0"
+			label="COM_PRODUCTFINDER_LBL_SHOW_CATEGORY" 
+			description="COM_PRODUCTFINDER_DESC_SHOW_CATEGORY">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field 
+			name="show_score" 
+			type="list" 
+			default="0"
+			label="COM_PRODUCTFINDER_LBL_SHOW_SCORE" 
+			description="COM_PRODUCTFINDER_DESC_SHOW_SCORE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>			
+		<field 
+			name="show_images" 
+			type="list" 
+			default="first"
+			label="COM_PRODUCTFINDER_LBL_SHOW_IMAGES" 
+			description="COM_PRODUCTFINDER_DESC_SHOW_IMAGES">
+			<option value="0">JNO</option>
+			<option value="intro">COM_PRODUCTFINDER_LBL_INTRO_IMAGE</option>
+			<option value="full">COM_PRODUCTFINDER_LBL_FULL_ARTICLE_IMAGE</option>
+			<option value="first">COM_PRODUCTFINDER_LBL_FIRST_ARTICLE_IMAGE</option>
+			<option value="last">COM_PRODUCTFINDER_LBL_LAST_ARTICLE_IMAGE</option>
+		</field>
+		<field 
+			name="link_to_details" 
+			type="list" 
+			default="1"
+			label="COM_PRODUCTFINDER_LBL_LINK_TO_DETAILS" 
+			description="COM_PRODUCTFINDER_DESC_LINK_TO_DETAILS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field 
+			name="resize_images" 
+			type="radio" 
+			class="radio btn-group"
+			default="1"
+			label="COM_PRODUCTFINDER_LBL_RESIZE_IMAGES" 
+			description="COM_PRODUCTFINDER_DESC_RESIZE_IMAGES">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field 
+			name="resize_mode" 
+			type="list" 
+			default="crop"
+			label="COM_PRODUCTFINDER_LBL_RESIZE_MODE" 
+			description="COM_PRODUCTFINDER_DESC_RESIZE_MODE">
+			<option value="adapt">COM_PRODUCTFINDER_LBL_ADAPT</option>
+			<option value="aspect">COM_PRODUCTFINDER_LBL_KEEP_ASPECT</option>
+			<option value="crop">COM_PRODUCTFINDER_LBL_CROP</option>
+		</field>		
+		<field 
+			name="img_heigth" 
+			type="text" 
+			default="100"
+			filter="integer" 
+			label="COM_PRODUCTFINDER_LBL_IMAGE_HEIGTH" 
+			description="COM_PRODUCTFINDER_DESC_IMAGE_HEIGTH"
+		/>
+		<field 
+			name="img_width" 
+			type="text" 
+			default="100"
+			filter="integer" 
+			label="COM_PRODUCTFINDER_LBL_IMAGE_WIDTH" 
+			description="COM_PRODUCTFINDER_DESC_IMAGE_WIDTH"
+			/>
+		<field 
+			name="image_quality" 
+			type="text" 
+			default="75"
+			filter="integer" 
+			label="COM_PRODUCTFINDER_LBL_IMAGE_QUALITY" 
+			description="COM_PRODUCTFINDER_DESC_IMAGE_QUALITY"
+		/>
+		<field 
+			name="debug_images" 
+			type="radio" 
+			class="radio btn-group"
+			default="0"
+			label="COM_PRODUCTFINDER_LBL_DEBUG_IMAGES" description="COM_PRODUCTFINDER_DESC_DEBUG_IMAGES">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field 
+			name="missing_image_action" 
+			type="list" 
+			default="0"
+			label="COM_PRODUCTFINDER_LBL_MISSING_IMAGE_ACTION" 
+			description="COM_PRODUCTFINDER_DESC_MISSING_IMAGE_ACTION">
+			<option value="0">COM_PRODUCTFINDER_LBL_DO_NOTHING</option>
+			<option value="1">COM_PRODUCTFINDER_LBL_USE_DEFAULT_IMAGE</option>
+		</field>
+		<field 
+			name="default_image" 
+			type="media" 
+			directory="stories"
+			label="COM_PRODUCTFINDER_LBL_DEFAULT_IMAGE" 
+			description="COM_PRODUCTFINDER_DESC_DEFAULT_IMAGE" 
+		/>
+	</fieldset>
+	<fieldset name="cssandjs" label="COM_PRODUCTFINDER_JS_AND_CSS">
+		<field 
+			name="load_jquery" 
+			type="radio"
+			class="radio btn-group" 
+			default="1"
+			label="COM_PRODUCTFINDER_LBL_LOAD_JQUERY" 
+			description="COM_PRODUCTFINDER_DESC_LOAD_JQUERY">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field 
+			name="load_minified_js" 
+			type="radio" 
+			class="radio btn-group"
+			default="1"
+			label="COM_PRODUCTFINDER_LBL_LOAD_MINIFIED_JS" 
+			description="COM_PRODUCTFINDER_DESC_LOAD_MINIFIED_JS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		<field 
+			name="load_minified_css" 
+			type="radio" 
+			class="radio btn-group"
+			default="1"
+			label="COM_PRODUCTFINDER_LBL_LOAD_MINIFIED_CSS" 
+			description="COM_PRODUCTFINDER_DESC_LOAD_MINIFIED_CSS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+	</fieldset>	
+</config>

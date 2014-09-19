@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>Product Finder</name>
+	<creationDate>2014-05-05</creationDate>
+	<author>Andrea Forghieri</author>
+	<copyright>(C) 2012 - 2014 Andrea Forghieri, Solidsystem - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@solidsystem.it</authorEmail>
+	<authorUrl>http://www.solidsystem.it</authorUrl>
+	<version>1.4.1</version>
+	<description>
+		Product Finder creates an App to filter articles with the answers of a questionnaire.
+	</description>
+	<scriptfile>install.php</scriptfile>
+	<install> 
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> 
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	<files folder="site">
+		<folder>language</folder>
+		<filename>assets/index.html</filename>
+		<filename>assets/css/index.html</filename>
+		<filename>assets/css/jquery.mobile.structure-1.4.0.css</filename>
+		<filename>assets/css/jquery.mobile.structure-1.4.0.min.css</filename>
+		<filename>assets/css/productfinder.css</filename>
+		<filename>assets/js/index.html</filename>
+		<filename>assets/js/jquery-1.10.2.js</filename>
+		<filename>assets/js/jquery-1.10.2.min.js</filename>
+		<filename>assets/js/jquery.mobile-1.4.0.js</filename>
+		<filename>assets/js/jquery.mobile-1.4.0.min.js</filename>
+		<filename>assets/js/mobileinit.js</filename>
+		<filename>assets/js/productfinder.js</filename>
+		<folder>assets/themes/default/images</folder>
+		<filename>assets/themes/default/index.html</filename>
+		<filename>assets/themes/default/default.css</filename>
+		<filename>assets/themes/default/default.min.css</filename>
+		<filename>assets/themes/default/jquery.mobile.icons.min.css</filename>
+		<filename>assets/themes/index.html</filename>
+		<filename>assets/themes/jquery.mobile.theme-1.4.0.css</filename>
+		<filename>assets/themes/jquery.mobile.theme-1.4.0.min.css</filename>
+		<filename>connectors/articles.php</filename>
+		<filename>connectors/index.html</filename>
+		<filename>helpers/helper.php</filename>
+		<filename>helpers/index.html</filename>
+		<filename>models/forms/index.html</filename>
+		<filename>models/choices.php</filename>
+		<filename>models/index.html</filename>
+		<filename>models/questionnaire.php</filename>
+		<filename>models/results.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/questionnaire/index.html</filename>
+		<filename>views/questionnaire/metadata.xml</filename>
+		<filename>views/questionnaire/tmpl/default_cover.php</filename>
+		<filename>views/questionnaire/tmpl/default_error.php</filename>
+		<filename>views/questionnaire/tmpl/default_list.php</filename>
+		<filename>views/questionnaire/tmpl/default.php</filename>
+		<filename>views/questionnaire/tmpl/default.xml</filename>
+		<filename>views/questionnaire/tmpl/index.html</filename>
+		<filename>views/questionnaire/view.html.php</filename>
+		<filename>views/results/index.html</filename>
+		<filename>views/results/tmpl/default_results.php</filename>
+		<filename>views/results/tmpl/default.php</filename>
+		<filename>views/results/tmpl/index.html</filename>
+		<filename>views/results/view.html.php</filename>
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>productfinder.php</filename>
+	</files>
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_productfinder.ini</language>
+	</languages>
+	<administration>
+		<menu img="components/com_productfinder/assets/images/16/productfinder.png"
+			view="questions">COM_PRODUCTFINDER_PRODUCT_FINDER</menu>
+		<submenu>
+			<menu img="components/com_productfinder/assets/images/16/questionnaires.png"
+				view="questionnaires">COM_PRODUCTFINDER_QUESTIONNAIRES</menu>
+			<menu img="components/com_productfinder/assets/images/16/questions.png"
+				view="questions">COM_PRODUCTFINDER_QUESTIONS</menu>
+			<menu img="components/com_productfinder/assets/images/16/rules.png"
+				view="rules">COM_PRODUCTFINDER_RULES</menu>
+			<menu img="components/com_productfinder/assets/images/16/utilities.png"
+				view="utilities">COM_PRODUCTFINDER_UTILITIES</menu>
+			<menu img="components/com_productfinder/assets/images/16/productfinder.png"
+				view="about">COM_PRODUCTFINDER_ABOUT</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>language</folder>
+			<filename>assets/index.html</filename>
+			<filename>assets/css/index.html</filename>
+			<filename>assets/css/productfinder.css</filename>
+			<filename>assets/images/14/disallowed.png</filename>
+			<filename>assets/images/14/index.html</filename>
+			<filename>assets/images/14/recommended.png</filename>
+			<filename>assets/images/14/required.png</filename>
+			<filename>assets/images/14/toggle.png</filename>
+			<filename>assets/images/14/unset.png</filename>
+			<filename>assets/images/14/unsetall.png</filename>
+			<filename>assets/images/14/unsetthis.png</filename>
+			<filename>assets/images/16/disabled.png</filename>
+			<filename>assets/images/16/disallowed.png</filename>
+			<filename>assets/images/16/index.html</filename>
+			<filename>assets/images/16/productfinder.png</filename>
+			<filename>assets/images/16/questionnaires.png</filename>
+			<filename>assets/images/16/questions.png</filename>
+			<filename>assets/images/16/recommended.png</filename>
+			<filename>assets/images/16/required.png</filename>
+			<filename>assets/images/16/rules.png</filename>
+			<filename>assets/images/16/utilities.png</filename>
+			<filename>assets/images/32/disallowed.png</filename>
+			<filename>assets/images/32/index.html</filename>
+			<filename>assets/images/32/recommended.png</filename>
+			<filename>assets/images/32/required.png</filename>
+			<filename>assets/images/32/toggle.png</filename>
+			<filename>assets/images/32/unset.png</filename>
+			<filename>assets/images/32/unsetall.png</filename>
+			<filename>assets/images/32/unsetthis.png</filename>
+			<filename>assets/images/48/index.html</filename>
+			<filename>assets/images/48/questionnaires.png</filename>
+			<filename>assets/images/48/questions.png</filename>
+			<filename>assets/images/48/rules.png</filename>
+			<filename>assets/images/48/utilities.png</filename>
+			<filename>assets/images/index.html</filename>
+			<filename>assets/images/logo_productfinder.jpg</filename>
+			<filename>assets/jfcontentelements/pf_answers.xml</filename>
+			<filename>assets/jfcontentelements/pf_questionnaires.xml</filename>
+			<filename>assets/jfcontentelements/pf_questions.xml</filename>
+			<filename>assets/jfcontentelements/translationPfquestionFilter.php</filename>
+			<filename>assets/jfcontentelements/index.html</filename>
+			<filename>assets/js/index.html</filename>
+			<filename>assets/js/productfinder.js</filename>
+			<filename>assets/js/productfinder.jquery.js</filename>
+			<filename>classes/index.html</filename>
+			<filename>classes/pf.classes.php</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controllers/about.php</filename>
+			<filename>controllers/ajax.raw.php</filename>
+			<filename>controllers/answers.php</filename>
+			<filename>controllers/question.php</filename>
+			<filename>controllers/questions.php</filename>
+			<filename>controllers/questionnaire.php</filename>
+			<filename>controllers/questionnaires.php</filename>
+			<filename>controllers/rules.php</filename>
+			<filename>controllers/utilities.php</filename>
+			<filename>helpers/helper.php</filename>
+			<filename>helpers/version.php</filename>
+			<filename>helpers/index.html</filename>
+			<filename>models/fields/modal/index.html</filename>
+			<filename>models/fields/modal/article.php</filename>
+			<filename>models/fields/index.html</filename>
+			<filename>models/fields/pfcategory.php</filename>
+			<filename>models/fields/questionnaire.php</filename>
+			<filename>models/forms/index.html</filename>
+			<filename>models/forms/questionnaire.xml</filename>
+			<filename>models/forms/question.xml</filename>
+			<filename>models/index.html</filename>
+			<filename>models/answer.php</filename>
+			<filename>models/answers.php</filename>
+			<filename>models/questionnaire.php</filename>
+			<filename>models/questionnaires.php</filename>
+			<filename>models/question.php</filename>
+			<filename>models/questions.php</filename>
+			<filename>models/rules.php</filename>
+			<filename>sql/index.html</filename>
+			<filename>sql/install.mysql.utf8.sql</filename>
+			<filename>sql/uninstall.mysql.utf8.sql</filename>
+			<filename>sql/updates/index.html</filename>
+			<filename>sql/updates/mysql/index.html</filename>
+			<filename>sql/updates/mysql/1.0.sql</filename>
+			<filename>sql/updates/mysql/1.3.sql</filename>
+			<filename>sql/updates/mysql/1.4.sql</filename>
+			<filename>tables/answers.php</filename>
+			<filename>tables/question.php</filename>
+			<filename>tables/questions.php</filename>
+			<filename>tables/questionnaire.php</filename>
+			<filename>tables/questionnaires.php</filename>
+			<filename>tables/rules.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>views/index.html</filename>
+			<filename>views/about/index.html</filename>
+			<filename>views/about/view.html.php</filename>
+			<filename>views/about/tmpl/default.php</filename>
+			<filename>views/about/tmpl/index.html</filename>
+			<filename>views/question/index.html</filename>
+			<filename>views/question/tmpl/edit.php</filename>
+			<filename>views/question/tmpl/index.html</filename>
+			<filename>views/question/view.html.php</filename>
+			<filename>views/questions/index.html</filename>
+			<filename>views/questions/tmpl/default.php</filename>
+			<filename>views/questions/tmpl/index.html</filename>
+			<filename>views/questions/view.html.php</filename>
+			<filename>views/questionnaire/index.html</filename>
+			<filename>views/questionnaire/tmpl/edit_metadata.php</filename>
+			<filename>views/questionnaire/tmpl/edit.php</filename>
+			<filename>views/questionnaire/tmpl/index.html</filename>
+			<filename>views/questionnaire/view.html.php</filename>
+			<filename>views/questionnaires/index.html</filename>
+			<filename>views/questionnaires/tmpl/default.php</filename>
+			<filename>views/questionnaires/tmpl/index.html</filename>
+			<filename>views/questionnaires/view.html.php</filename>
+			<filename>views/rules/index.html</filename>
+			<filename>views/rules/tmpl/default.php</filename>
+			<filename>views/rules/tmpl/index.html</filename>
+			<filename>views/rules/view.html.php</filename>
+			<filename>views/utilities/index.html</filename>
+			<filename>views/utilities/tmpl/default.php</filename>
+			<filename>views/utilities/tmpl/index.html</filename>
+			<filename>views/utilities/view.html.php</filename>
+			<filename>CHANGELOG.TXT</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>			
+			<filename>productfinder.php</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_productfinder.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_productfinder.ini</language>
+		</languages>
+	</administration>
+</extension>

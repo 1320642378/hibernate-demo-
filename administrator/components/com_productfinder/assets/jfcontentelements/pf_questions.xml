@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<falang type="contentelement">
+  <name>Product Finder Questions</name>
+  <author>Andrea Forghieri</author>
+  <version>1.0.0</version>
+  <description>Definition for Product Finder questions</description>
+  <reference>
+  	<table name="pf_questions">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="question" translate="1">Question</field>
+  		<field type="htmltext" name="question_full" translate="1">Question Full</field>
+  	</table>
+  </reference>
+</falang>

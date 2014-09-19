@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<falang type="contentelement">
+  <name>Product Finder Questionnaire</name>
+  <author>Andrea Forghieri</author>
+  <version>1.0.0</version>
+  <description>Definition for Product Finder questionnaire</description>
+  <reference>
+  	<table name="pf_questionnaires">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="title" translate="1">Title</field>
+  		<field type="htmltext" name="description" translate="1">Description</field>
+  	</table>
+  </reference>
+</falang>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+<name>COM_NOTHING</name>
+<author>jerry</author>
+<creationDate>April 2014</creationDate>
+<copyright>(C) 2013 Packt Publishing. All rights reserved.
+</copyright>
+<license>GNU General Public License version 2 or later; see
+LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+<version>1.0.0</version>
+<description>COM_NOTHING_XML_DESCRIPTION</description>
+<scriptfile>script.php</scriptfile>
+<files folder="site">
+<filename>index.html</filename>
+<filename>controller.php</filename>
+<filename>nothing.php</filename>
+<folder>controllers</folder>
+<folder>language</folder>
+<folder>models</folder>
+<folder>views</folder>
+</files>
+<languages folder="site">
+<language tag="en-GB">language/en-GB/en-GB.com_nothing.ini</language>
+</languages>
+<administration>
+<files folder="admin">
+<filename>index.html</filename>
+</files>
+<languages folder="admin">
+<language tag="en-GB">language/en-GB/en-GB.com_nothing.ini</language>
+<language tag="en-GB">language/en-GB/en-GB.com_nothing.sys.ini</language>
+</languages>
+</administration>
+</extension>

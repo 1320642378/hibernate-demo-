@@ -1,0 +1,82 @@
+Product Finder for Joomla 2.5 and Joomla 3.x
+
+Legend:
+
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+-------------------- 1.4.1 2014-05-05  ---------------
+! modified backend, frontend
+^ replaced the deprecated JRequest with Jinput
+# fixed bug: unable to delete questionnaire logs
+^ removed unused code
+ 
+-------------------- 1.4 2014-02-18  ---------------
+! modified backend, introducing "advanced" version
++ added ACL [advanced]
++ added K2 compatibility [advanced]
++ added Hikashop compatibility [advanced]
++ added Mailer [advanced]
++ added Logger [advanced]
+^ modified css to fix some issues with bootstrap based templates
+
+-------------------- 1.3 2014-01-30  ---------------
+! modified backend
++ added Falang compatibility (content elements)
++ added utilities menu to a) install falang content elements, b) delete/refresh thumbnails
++ added category filter for questionnaires' results
+# fixed error Parse error: syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM in administrator/components/com_productfinder/helpers/helper.php on line 34 (when using PHP 5.2)
+^ updated jQuery mobile to 1.4.0
+^ updated jQuery to 1.10.2
+^ updated install script to install Falang Content Elements when appropriate
+
+-------------------- 1.2 2013-11-08  ---------------
+!modified frontend
+^ added compatibility with Joomla 3.2 
+# fixed bug with localized version of productfinded (next button not working under some circumstances)
+
+-------------------- 1.1 2013-01-10 ------------------
+!modified backed, modified fronted
++ added compatibility with Joomla 3.x
+^ using jQueryMobile 1.3.2 + jQuery 1.8.3
+
+-------------------- 1.0 2013-10-01 ------------------
+!initial public release
+
+-------------------- 0.7 2013-06-19 ------------------
+!modified frontend
+# fixed question ordering
+
+-------------------- 0.7 2013-01-29 ------------------
+! modified frontend
+# mailing logger records wrong questionnaire id
+
+-------------------- 0.6 2013-01-29 ------------------
+! modified backend and frontend
+# rules editor: items with same title with wrong internal ordering
+# modified main query, a bug prevented items with 'NO' in any question (even not chosen ones) from being displayed 
+
+-------------------- 0.5 2013-01-29 ------------------
+! modified backend and frontend
++ added no-results action
+
+-------------------- 0.4 2013-01-25 ------------------
+! modified backend
++ added logging
+
+-------------------- 0.3 2013-01-09 ------------------
+! note unrelease
+^ revised rules table (modified index)
+^ changed many things
+
+-------------------- 0.2 2012-12-17 ------------------
+! note unrelease
++ added mailer
+
+
+-------------------- 0.1 2012-11-28 ------------------
+! Initial release

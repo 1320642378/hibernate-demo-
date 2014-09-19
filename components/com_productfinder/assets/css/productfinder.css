@@ -1,0 +1,123 @@
+/* FIX to keep PF within content area boudaries */
+div.pf-result-detail.ui-page,
+div#pf_result_main,
+div#pf_mailer,
+div#pf_questionnaire{
+	position: inherit;
+}
+
+div.pf-result-detail [data-icon]:before,
+div#pf_mailer [data-icon]:before,
+div#pf_result_main [data-icon]:before,
+div#pf_questionnaire [data-icon]:before {
+    content: normal;
+    font-family: inherit;
+}
+
+/* fix for protostar-like template, that disables button */
+div#pf_result_main input[type="file"],
+div#pf_result_main input[type="image"],
+div#pf_result_main input[type="submit"],
+div#pf_result_main input[type="reset"],
+div#pf_result_main input[type="button"],
+div#pf_result_main input[type="radio"],
+div#pf_result_main input[type="checkbox"],
+div#pf_mailer input[type="file"],
+div#pf_mailer input[type="image"],
+div#pf_mailer input[type="submit"],
+div#pf_mailer input[type="reset"],
+div#pf_mailer input[type="button"],
+div#pf_mailer input[type="radio"],
+div#pf_mailer input[type="checkbox"],
+div#pf_questionnaire input[type="file"],
+div#pf_questionnaire input[type="image"],
+div#pf_questionnaire input[type="submit"],
+div#pf_questionnaire input[type="reset"],
+div#pf_questionnaire input[type="button"],
+div#pf_questionnaire input[type="radio"],
+div#pf_questionnaire input[type="checkbox"] {
+	width: 100%;
+	margin:0; /* fix for protostar template + Chrome */
+}
+/* fix for text fields with bootrap based templates */
+div#pf_mailer input[type="text"],
+div#pf_mailer input[type="email"]{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* fix for head navbar */
+div#pf_questionnaire h1,
+div#pf_result_main h1,
+div#pf_mailer h1,
+div.pf-result-detail h1{
+	border: none !important;
+	color: inherit !important;	
+}
+
+/* FIX for buttons in navabar */
+div.pf-result-detail a:link,
+div.pf-result-detail a:visited,
+div.pf-result-detail a:active,
+div#pf_result_main a:link,
+div#pf_result_main a:visited,
+div#pf_result_main a:active{
+	color: inherit !important;
+}
+div.pf-result-detail a:active,
+div.pf-result-detail a:focus,
+div.pf-result-detail a:hover,
+div#pf_mailer a:active,
+div#pf_mailer a:focus,
+div#pf_mailer a:hover,
+div#pf_result_main a:active,
+div#pf_result_main a:focus,
+div#pf_result_main a:hover{
+	background: inherit !important;
+	color: inherit !important;
+}
+ 
+ 
+div#pf_questionnaire ul,
+div#pf_result_main ul{
+	margin:0; padding:0;
+}
+div#pf_result_main ul li{
+	padding-left: inherit;
+}
+
+div.pf-result-detail h3,
+div#pf_result_main h3{
+	color: inherit;
+	text-shadow: inherit;
+	margin: 0 0 0.6em 0;
+}
+.pf_question{
+	font-size: 120%;
+	font-weight: bold;	
+}
+
+div#pf_result_main .ui-li-thumb, div#pf_result_main .ui-listview div#pf_result_main .ui-li-icon{
+	max-width: 100%;
+	max-height: none;
+}
+
+div.pf-result-detail .clearfix{
+	clear:both;
+}
+
+div.pf_cover{
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+}
+
+/* FIX for listview with thumnail, without link */
+div#pf_result_main li.ui-li-has-thumb > img.pf-res-image{
+	display: block;
+	float: left;
+	margin-right: 1em;
+	position: inherit;
+	max-height: 100%;
+	max-width: 100%;
+} 
