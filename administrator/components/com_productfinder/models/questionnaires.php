@@ -43,7 +43,9 @@ class ProductfinderModelQuestionnaires extends JModelList
 
 		parent::__construct($config);
 	}
-
+/**
+ * 自动更新状态变量
+ */
 	protected function populateState($ordering = null, $direction = null)
 	{
 		$jinput = JFactory::getApplication()->input;
@@ -71,7 +73,9 @@ class ProductfinderModelQuestionnaires extends JModelList
 		// List state information.
 		parent::populateState('a.title', 'asc');
 	}
-
+/*
+ * 依据模型的配置返回一个模型的储存标识，也就是一个字符串
+ */
 	protected function getStoreId($id = '')
 	{
 		$id	.= ':'.$this->getState('filter.search');
@@ -84,7 +88,7 @@ class ProductfinderModelQuestionnaires extends JModelList
 
 	/**
 	 * Build an SQL query to load the list data.
-	 *
+	 * 获得一个查询对象，也就是SQL语句，用来从数据库返回结果集
 	 * @return	JDatabaseQuery
 	 * @since	1.0
 	 */

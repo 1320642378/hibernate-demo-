@@ -64,7 +64,10 @@ class ProductfinderViewQuestionnaires extends JViewLegacy {
 			JToolBarHelper::trash('questionnaires.trash');
 			JToolBarHelper::divider();
 		}
-		
+		/*
+		 * 添加一个Parameters设置的按钮，点击按钮可以设置这个组件的相关参数，
+		 * 当修改这些参数后，参数保存在component表中。
+		 */
 		JToolBarHelper::preferences( 'com_productfinder' );
 		
 	}

@@ -25,7 +25,7 @@ class ProductfinderModelQuestionnaire extends JModelAdmin
 	
 	public function __construct(){
 		$app 	= JFactory::getApplication();
-		$params = JComponentHelper::getParams('com_productfinder');
+		$params = JComponentHelper::getParams('com_productfinder'); // load the Params
 		$this->params = $params;
 		return parent::__construct();
 	}

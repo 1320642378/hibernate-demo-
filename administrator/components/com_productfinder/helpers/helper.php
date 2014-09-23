@@ -251,9 +251,8 @@ class ProductfinderHelper
 		$db = JFactory::getDbo();
 		
 		//delete questions with missing questionaire
-		$query = 'DELETE #__pf_questions AS q '
-				. 'FROM #__pf_questions AS q LEFT JOIN #__pf_questionnaires AS qq ON q.questionnaire_id = qq.id ' 
-				. 'WHERE qq.id IS NULL ';	
+		$query = 'DELETE FROM #__pf_questions AS q LEFT JOIN #__pf_questionnaires AS qq ' .
+				'ON q.questionnaire_id = qq.id WHERE qq.id IS NULL' ;
 		$db->setQuery($query);
 		if(!$db->query()){
 			JError::raiseError(500, $db->getErrorMsg(true));
